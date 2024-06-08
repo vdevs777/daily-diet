@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "f722cb3d-65f9-4361-b292-2bc7b772e496",
+		"name": "Daily Diet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35583944"
+	},
+	"item": [
+		{
+			"name": "Cadastrar usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"SampleUsername\",\r\n    \"password\": \"SamplePassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/user",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Realizar logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/logout",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Realizar login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"SampleUsername\",\r\n    \"password\": \"SamplePassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/login",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar refeição",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"SampleMeal\",\r\n    \"description\": \"SampleDescription\",\r\n    \"is_it_on_diet\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/meal",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"meal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar refeição",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/meal/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"meal",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver refeições de um usuário",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/meals/1",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"meals",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver uma refeição",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/meal/3",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"meal",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar refeição",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"SampleName\",\r\n    \"description\": \"SampleDescription\",\r\n    \"is_it_on_diet\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/meal/2",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"meal",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
