@@ -36,4 +36,5 @@ O projeto Daily Diet tem como finalidade ser um app onde as pessoas possam cadas
 Esse projeto está sob a licença MIT. Veja o arquivo  [LICENSE](https://github.com/vdevs777/daily-diet/blob/main/LICENSE.md)  para mais detalhes.
 
 <hr />
+<br />
 Feito por vdevs777! 🌟
